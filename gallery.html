@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gallery | Littlegill</title>
-  <meta name="description" content="Photographs of Littlegill holiday cottage, its garden, the gill and the valley around it. Have a proper look before you book.">
+  <meta name="description" content="Photographs of Littlegill holiday house: five bedrooms, four bathrooms, the kitchen, the garden and the hills around it. Have a proper look before you book.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -25,7 +25,7 @@
       <nav class="header__nav" id="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="cottage.html">The Cottage</a></li>
+          <li><a href="cottage.html">The House</a></li>
           <li><a href="gallery.html" aria-current="page">Gallery</a></li>
           <li><a href="location.html">Location</a></li>
           <li><a href="booking.html">Booking</a></li>
@@ -41,11 +41,17 @@
 
     <!-- ELEMENTOR: short full-width image header -->
     <section class="page-hero" aria-label="Gallery">
-      <img class="page-hero__image" src="images/valley.svg" alt="The valley around Littlegill in soft light" fetchpriority="high">
+      <img class="page-hero__image"
+           src="images/garden-wide-1024.jpg"
+           srcset="images/garden-wide-480.jpg 480w, images/garden-wide-768.jpg 768w, images/garden-wide-1024.jpg 1024w"
+           sizes="100vw"
+           width="1024" height="682"
+           alt="The garden at Littlegill with lawn, borders and hills in the distance"
+           fetchpriority="high">
       <div class="container">
         <span class="label">Gallery</span>
         <h1>Have a proper look around</h1>
-        <p class="page-hero__sub">The cottage, the garden, the gill and the tops. Tap any photo to see it large.</p>
+        <p class="page-hero__sub">The house, the garden and the rooms in between. Tap any photo to see it large.</p>
       </div>
     </section>
 
@@ -54,76 +60,124 @@
       <div class="container">
         <div class="masonry reveal">
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="0">
-              <img src="images/hero.svg" alt="Littlegill cottage at dusk, lit windows glowing beneath the fells" loading="lazy" width="1920" height="1280">
+            <button class="masonry__item" type="button">
+              <img src="images/house-front-1024.jpg" srcset="images/house-front-480.jpg 480w, images/house-front-768.jpg 768w, images/house-front-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The stone front of Littlegill and its driveway" loading="lazy">
             </button>
-            <figcaption>Dusk settling over the cottage</figcaption>
+            <figcaption>Littlegill from the lane</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="1">
-              <img src="images/sitting-room.svg" alt="The sitting room with the wood burner lit" loading="lazy" width="1200" height="900">
+            <button class="masonry__item" type="button">
+              <img src="images/sitting-room-1024.jpg" srcset="images/sitting-room-480.jpg 480w, images/sitting-room-768.jpg 768w, images/sitting-room-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The sitting room with three sofas and hill views" loading="lazy">
             </button>
-            <figcaption>The sitting room, fire on</figcaption>
+            <figcaption>The sitting room, hills included</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="2">
-              <img src="images/bedroom.svg" alt="The main bedroom in soft morning light" loading="lazy" width="1200" height="1500">
+            <button class="masonry__item" type="button">
+              <img src="images/kitchen-1024.jpg" srcset="images/kitchen-480.jpg 480w, images/kitchen-768.jpg 768w, images/kitchen-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The white kitchen with induction hob" loading="lazy">
             </button>
-            <figcaption>Morning light in the main bedroom</figcaption>
+            <figcaption>The kitchen</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="3">
-              <img src="images/kitchen.svg" alt="The kitchen in warm afternoon light" loading="lazy" width="1200" height="900">
+            <button class="masonry__item" type="button">
+              <img src="images/bedroom-main-1024.jpg" srcset="images/bedroom-main-480.jpg 480w, images/bedroom-main-768.jpg 768w, images/bedroom-main-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The main bedroom with chaise by the window" loading="lazy">
             </button>
-            <figcaption>The kitchen, warm by four o'clock</figcaption>
+            <figcaption>The main bedroom</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="4">
-              <img src="images/gill.svg" alt="The little gill running past the cottage garden" loading="lazy" width="1200" height="900">
+            <button class="masonry__item" type="button">
+              <img src="images/garden-deck-1024.jpg" srcset="images/garden-deck-480.jpg 480w, images/garden-deck-768.jpg 768w, images/garden-deck-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The decked terrace with outdoor furniture" loading="lazy">
             </button>
-            <figcaption>The gill itself, ten steps from the door</figcaption>
+            <figcaption>The deck, set for supper</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="5">
-              <img src="images/cottage-exterior.svg" alt="Littlegill cottage from the lane" loading="lazy" width="1200" height="900">
+            <button class="masonry__item" type="button">
+              <img src="images/dining-room-1024.jpg" srcset="images/dining-room-480.jpg 480w, images/dining-room-768.jpg 768w, images/dining-room-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The dining area with oak table" loading="lazy">
             </button>
-            <figcaption>The cottage from the lane</figcaption>
+            <figcaption>One table, all of you</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="6">
-              <img src="images/bedroom-two.svg" alt="The second bedroom with twin beds" loading="lazy" width="1200" height="900">
+            <button class="masonry__item" type="button">
+              <img src="images/bedroom-attic-1024.jpg" srcset="images/bedroom-attic-480.jpg 480w, images/bedroom-attic-768.jpg 768w, images/bedroom-attic-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The attic double bedroom with TV" loading="lazy">
             </button>
-            <figcaption>The second bedroom, twins or a super king</figcaption>
+            <figcaption>The attic double, up in the eaves</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="7">
-              <img src="images/garden.svg" alt="The enclosed garden looking towards the fells" loading="lazy" width="1200" height="900">
+            <button class="masonry__item" type="button">
+              <img src="images/shower-room-1024.jpg" srcset="images/shower-room-480.jpg 480w, images/shower-room-768.jpg 768w, images/shower-room-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="A walk-in shower room with open shelving" loading="lazy">
             </button>
-            <figcaption>The garden, breakfast spot when it's fine</figcaption>
+            <figcaption>One of the walk-in showers</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="8">
-              <img src="images/bathroom.svg" alt="The bathroom, bright and calm" loading="lazy" width="1200" height="900">
+            <button class="masonry__item" type="button">
+              <img src="images/kitchen-dining-1024.jpg" srcset="images/kitchen-dining-480.jpg 480w, images/kitchen-dining-768.jpg 768w, images/kitchen-dining-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The kitchen with glazed doors to the garden" loading="lazy">
             </button>
-            <figcaption>The bathroom</figcaption>
+            <figcaption>Kitchen doors to the garden</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="9">
-              <img src="images/valley.svg" alt="Looking down the valley from the fell above" loading="lazy" width="1600" height="1000">
+            <button class="masonry__item" type="button">
+              <img src="images/bedroom-navy-1024.jpg" srcset="images/bedroom-navy-480.jpg 480w, images/bedroom-navy-768.jpg 768w, images/bedroom-navy-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="A double bedroom with navy bedding" loading="lazy">
             </button>
-            <figcaption>The view from the fell above</figcaption>
+            <figcaption>The navy double</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="10">
-              <img src="images/moor.svg" alt="Heather in bloom on the moor" loading="lazy" width="1200" height="900">
+            <button class="masonry__item" type="button">
+              <img src="images/bathroom-family-1024.jpg" srcset="images/bathroom-family-480.jpg 480w, images/bathroom-family-768.jpg 768w, images/bathroom-family-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The family bathroom with full-size bath" loading="lazy">
             </button>
-            <figcaption>Heather on the tops in late summer</figcaption>
+            <figcaption>The family bathroom</figcaption>
           </figure>
           <figure>
-            <button class="masonry__item" type="button" data-lightbox="11">
-              <img src="images/village.svg" alt="The village pub glowing at dusk" loading="lazy" width="1200" height="900">
+            <button class="masonry__item" type="button">
+              <img src="images/hallway-1024.jpg" srcset="images/hallway-480.jpg 480w, images/hallway-768.jpg 768w, images/hallway-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The bright hallway and staircase" loading="lazy">
             </button>
-            <figcaption>The pub, a gentle stroll away</figcaption>
+            <figcaption>The hallway</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button">
+              <img src="images/bedroom-teen-1024.jpg" srcset="images/bedroom-teen-480.jpg 480w, images/bedroom-teen-768.jpg 768w, images/bedroom-teen-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="A pink double bedroom with heart-shaped mirror" loading="lazy">
+            </button>
+            <figcaption>The pink double</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button">
+              <img src="images/garden-wide-1024.jpg" srcset="images/garden-wide-480.jpg 480w, images/garden-wide-768.jpg 768w, images/garden-wide-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The enclosed garden with hills in the distance" loading="lazy">
+            </button>
+            <figcaption>The garden, hills carrying on beyond</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button">
+              <img src="images/bedroom-single-1024.jpg" srcset="images/bedroom-single-480.jpg 480w, images/bedroom-single-768.jpg 768w, images/bedroom-single-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The single bedroom with countryside views" loading="lazy">
+            </button>
+            <figcaption>The single, first pick for younger guests</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button">
+              <img src="images/sitting-room-tv-1024.jpg" srcset="images/sitting-room-tv-480.jpg 480w, images/sitting-room-tv-768.jpg 768w, images/sitting-room-tv-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The sitting room from the other end, sofas around the TV" loading="lazy">
+            </button>
+            <figcaption>Film nights sorted</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button">
+              <img src="images/dressing-room-1024.jpg" srcset="images/dressing-room-480.jpg 480w, images/dressing-room-768.jpg 768w, images/dressing-room-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The walk-in dressing room with rails and dressing table" loading="lazy">
+            </button>
+            <figcaption>The walk-in dressing room</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button">
+              <img src="images/utility-1024.jpg" srcset="images/utility-480.jpg 480w, images/utility-768.jpg 768w, images/utility-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="The utility room with washing machine and microwave" loading="lazy">
+            </button>
+            <figcaption>The utility room, where the boots live</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button">
+              <img src="images/bathroom-grey-1024.jpg" srcset="images/bathroom-grey-480.jpg 480w, images/bathroom-grey-768.jpg 768w, images/bathroom-grey-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="A grey tiled shower room" loading="lazy">
+            </button>
+            <figcaption>Another of the bathrooms</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button">
+              <img src="images/house-rear-1024.jpg" srcset="images/house-rear-480.jpg 480w, images/house-rear-768.jpg 768w, images/house-rear-1024.jpg 1024w" sizes="(min-width: 960px) 33vw, (min-width: 600px) 50vw, 100vw" width="1024" height="682" alt="Littlegill from the garden with hills behind" loading="lazy">
+            </button>
+            <figcaption>The house from the garden</figcaption>
           </figure>
         </div>
       </div>
@@ -132,9 +186,9 @@
     <!-- ELEMENTOR: full-width CTA band -->
     <section class="section section--sage cta-band" aria-label="Book your stay">
       <div class="container reveal">
-        <span class="hand">picture yourself here</span>
+        <span class="hand">picture yourselves here</span>
         <h2>The real thing is even better</h2>
-        <p>Photographs only get you so far. Come and hear the gill for yourself.</p>
+        <p>Photographs only get you so far. Come and see the hills for yourself.</p>
         <a class="btn btn--paper" href="booking.html">Check availability</a>
       </div>
     </section>
@@ -147,12 +201,12 @@
       <div class="footer__grid">
         <div>
           <h2>Littlegill</h2>
-          <p>A small stone cottage for four by its own little gill. Dog friendly, wood burner, big skies.</p>
+          <p>A spacious, light-filled house for nine in the hills, named after the little gill nearby.</p>
         </div>
         <div>
           <h3>Find your way</h3>
           <ul>
-            <li><a href="cottage.html">The Cottage</a></li>
+            <li><a href="cottage.html">The House</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="location.html">Location &amp; Things to Do</a></li>
             <li><a href="booking.html">Availability &amp; Booking</a></li>
