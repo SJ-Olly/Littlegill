@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Littlegill</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a class="header__logo" href="index.html">Littlegill</a>
+
+      <button class="header__toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+
+      <nav class="header__nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cottage.html">The Cottage</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn header__cta" href="booking.html">Check availability</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="min-height: 100svh;" aria-label="Page not found">
+      <img class="page-hero__image" src="images/hero.svg" alt="Dusk over the valley around Littlegill" fetchpriority="high">
+      <div class="container">
+        <span class="label">Page not found</span>
+        <h1>You've wandered off the path</h1>
+        <p class="page-hero__sub">It happens on the tops all the time. Let's get you back to the cottage.</p>
+        <div style="margin-top: var(--space-4);">
+          <a class="btn btn--paper" href="index.html">Back to the cottage</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

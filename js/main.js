@@ -10,7 +10,7 @@
   'use strict';
 
   var header = document.getElementById('header');
-  var hero = document.querySelector('.hero');
+  var hero = document.querySelector('.hero, .page-hero');
   var mobileCta = document.getElementById('mobile-cta');
   var toggle = document.querySelector('.header__toggle');
   var nav = document.getElementById('site-nav');
@@ -64,5 +64,60 @@
     revealables.forEach(function (el) { revealWatcher.observe(el); });
   } else {
     revealables.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  /* Basic lightbox (gallery page only; Elementor equivalent is built in) */
+  var lightbox = document.getElementById('lightbox');
+  if (lightbox) {
+    var items = Array.prototype.slice.call(document.querySelectorAll('.masonry__item'));
+    var lightboxImage = document.getElementById('lightbox-image');
+    var lightboxCaption = document.getElementById('lightbox-caption');
+    var closeButton = lightbox.querySelector('.lightbox__close');
+    var prevButton = lightbox.querySelector('.lightbox__prev');
+    var nextButton = lightbox.querySelector('.lightbox__next');
+    var current = 0;
+    var lastFocused = null;
+
+    var show = function (index) {
+      current = (index + items.length) % items.length;
+      var img = items[current].querySelector('img');
+      var caption = items[current].parentElement.querySelector('figcaption');
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightboxCaption.textContent = caption ? caption.textContent : '';
+    };
+
+    var open = function (index) {
+      lastFocused = document.activeElement;
+      show(index);
+      lightbox.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+      closeButton.focus();
+    };
+
+    var close = function () {
+      lightbox.classList.remove('is-open');
+      document.body.style.overflow = '';
+      if (lastFocused) { lastFocused.focus(); }
+    };
+
+    items.forEach(function (item, index) {
+      item.addEventListener('click', function () { open(index); });
+    });
+
+    closeButton.addEventListener('click', close);
+    prevButton.addEventListener('click', function () { show(current - 1); });
+    nextButton.addEventListener('click', function () { show(current + 1); });
+
+    lightbox.addEventListener('click', function (event) {
+      if (event.target === lightbox) { close(); }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (!lightbox.classList.contains('is-open')) { return; }
+      if (event.key === 'Escape') { close(); }
+      if (event.key === 'ArrowLeft') { show(current - 1); }
+      if (event.key === 'ArrowRight') { show(current + 1); }
+    });
   }
 })();

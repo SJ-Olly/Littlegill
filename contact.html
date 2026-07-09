@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Littlegill</title>
+  <meta name="description" content="Get in touch with us about staying at Littlegill holiday cottage. We usually reply the same day.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ELEMENTOR: sticky header, transparent over hero, solid on scroll -->
+  <header class="header" id="header">
+    <div class="container">
+      <a class="header__logo" href="index.html">Littlegill</a>
+
+      <button class="header__toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+
+      <nav class="header__nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cottage.html">The Cottage</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn header__cta" href="booking.html">Check availability</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ELEMENTOR: short full-width image header -->
+    <section class="page-hero" aria-label="Contact">
+      <img class="page-hero__image" src="images/gill.svg" alt="The gill running down the valley below the cottage" fetchpriority="high">
+      <div class="container">
+        <span class="label">Contact</span>
+        <h1>Say hello</h1>
+        <p class="page-hero__sub">Questions, special requests or just checking we're real. We usually reply the same day.</p>
+      </div>
+    </section>
+
+    <!-- ELEMENTOR: form widget + text column -->
+    <section class="section" aria-label="Send us a message">
+      <div class="container">
+        <div class="contact-details">
+          <div class="reveal">
+            <h2>Send us a message</h2>
+            <!-- Netlify Forms: picked up automatically on deploy -->
+            <form class="form" name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact">
+              <p hidden aria-hidden="true">
+                <label>Don't fill this in if you're human: <input name="bot-field"></label>
+              </p>
+              <div class="form__row">
+                <div>
+                  <label for="name">Your name</label>
+                  <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
+                <div>
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+              </div>
+              <div>
+                <label for="dates">Dates you have in mind (optional)</label>
+                <input type="text" id="dates" name="dates" placeholder="e.g. a long weekend in October">
+              </div>
+              <div>
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <p class="form__note">We only use your details to reply to you. No lists, no newsletters, no nonsense.</p>
+              <div>
+                <button class="btn btn--primary" type="submit">Send message</button>
+              </div>
+            </form>
+          </div>
+          <div class="contact-aside reveal">
+            <span class="hand">or just email us directly</span>
+            <h2>Other ways to reach us</h2>
+            <p>Email is quickest: <a href="mailto:stay@littlegill.co.uk">stay@littlegill.co.uk</a></p>
+            <p>Once you have booked, we share our phone number and the cottage address with your confirmation, so you can always reach a real person before and during your stay.</p>
+            <p>If you are asking about dates, the <a href="booking.html">availability calendar</a> is live and always up to date.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELEMENTOR: full-width CTA band -->
+    <section class="section section--sage cta-band" aria-label="Book your stay">
+      <div class="container reveal">
+        <span class="hand">we'd love to have you</span>
+        <h2>Ready when you are</h2>
+        <p>Check the calendar, pick your dates and the kettle will be waiting.</p>
+        <a class="btn btn--paper" href="booking.html">Check availability</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ELEMENTOR: footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h2>Littlegill</h2>
+          <p>A small stone cottage for four by its own little gill. Dog friendly, wood burner, big skies.</p>
+        </div>
+        <div>
+          <h3>Find your way</h3>
+          <ul>
+            <li><a href="cottage.html">The Cottage</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="location.html">Location &amp; Things to Do</a></li>
+            <li><a href="booking.html">Availability &amp; Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Say hello</h3>
+          <ul>
+            <li><a href="mailto:stay@littlegill.co.uk">stay@littlegill.co.uk</a></li>
+            <li><a href="contact.html">Send us a message</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__small">
+        <span>&copy; 2026 Littlegill. All rights reserved.</span>
+        <span>littlegill.co.uk</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Always-visible booking CTA on small screens -->
+  <div class="mobile-cta" id="mobile-cta">
+    <a class="btn btn--primary" href="booking.html">Check availability</a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

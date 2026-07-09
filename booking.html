@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Availability &amp; Booking | Littlegill</title>
+  <meta name="description" content="Check live availability and book your stay at Littlegill holiday cottage. Short breaks and full weeks, all year round.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ELEMENTOR: sticky header, transparent over hero, solid on scroll -->
+  <header class="header" id="header">
+    <div class="container">
+      <a class="header__logo" href="index.html">Littlegill</a>
+
+      <button class="header__toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+
+      <nav class="header__nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cottage.html">The Cottage</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="booking.html" aria-current="page">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn header__cta" href="#book">Check availability</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ELEMENTOR: short full-width image header -->
+    <section class="page-hero" aria-label="Availability and booking">
+      <img class="page-hero__image" src="images/garden.svg" alt="The cottage garden looking towards the fells" fetchpriority="high">
+      <div class="container">
+        <span class="label">Availability &amp; Booking</span>
+        <h1>Pick your dates</h1>
+        <p class="page-hero__sub">Live availability, secure online booking, and the kettle on when you arrive.</p>
+      </div>
+    </section>
+
+    <!-- ELEMENTOR: HTML widget (Lodgify portable search bar) -->
+    <section class="search-band" id="book" aria-label="Check availability">
+      <div class="container">
+        <span class="label">Check availability</span>
+        <div class="search-band__widget">
+          <div
+            id="lodgify-search-bar"
+            data-website-id="618511"
+            data-language-code="en"
+            data-checkout-page-url='https://checkout.lodgify.com/simon-orton/en/#/730669'
+
+            data-dates-check-in-label='Check-in'
+            data-dates-check-out-label='Check-out'
+            data-guests-counter-label='Guests'
+            data-guests-input-singular-label='{{NumberOfGuests}} guest'
+            data-guests-input-plural-label='{{NumberOfGuests}} guests'
+            data-location-input-label='Location'
+            data-search-button-label='Search'
+            data-dates-input-min-stay-tooltip-text='{"one":"Minimum {minStay} night","other":"Minimum {minStay} nights"}'
+            data-guests-breakdown-label='Guests'
+            data-adults-label='{"one":"adult","other":"adults"}'
+            data-adults-description='Ages {minAge} or above'
+            data-children-label='{"one":"child","other":"children"}'
+            data-children-description='Ages {minAge}-{maxAge}'
+            data-children-not-allowed-label='Not suitable for children'
+            data-infants-label='{"one":"infant","other":"infants"}'
+            data-infants-description='Under {maxAge}'
+            data-infants-not-allowed-label='Not suitable for infants'
+            data-pets-label='{"one":"pet","other":"pets"}'
+            data-pets-not-allowed-label='Not allowed'
+            data-done-label='Done'
+
+            data-new-tab="true"
+            data-version="stable"
+            data-has-guests-breakdown
+          ></div>
+        </div>
+        <p class="search-band__fallback">If the search does not load, email <a href="mailto:stay@littlegill.co.uk">stay@littlegill.co.uk</a> and we will check dates for you.</p>
+      </div>
+    </section>
+
+    <!-- ELEMENTOR: 3 column text row -->
+    <section class="section" aria-label="How booking works">
+      <div class="container">
+        <div class="steps">
+          <div class="reveal">
+            <span class="steps__num">01</span>
+            <h3>Choose your dates</h3>
+            <p>The calendar shows live availability. Short breaks and full weeks are both welcome, all year round.</p>
+          </div>
+          <div class="reveal">
+            <span class="steps__num">02</span>
+            <h3>Book securely online</h3>
+            <p>Booking and payment are handled securely through our booking system, with confirmation by email straight away.</p>
+          </div>
+          <div class="reveal">
+            <span class="steps__num">03</span>
+            <h3>We take it from there</h3>
+            <p>A week before you arrive we send directions, entry details and our tips for the valley. Then it's kettle on.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELEMENTOR: accordion widget -->
+    <section class="section section--tint" aria-label="Booking questions">
+      <div class="container container--narrow">
+        <div class="reveal">
+          <span class="label">Before you book</span>
+          <h2 style="font-size: var(--text-2xl); margin-bottom: var(--space-4);">Questions we're often asked</h2>
+        </div>
+        <div class="accordion reveal">
+          <details>
+            <summary>Can we come for a short break?</summary>
+            <div>
+              <p>Yes. Minimum stays vary through the year and show automatically when you pick dates in the calendar. Midweek breaks are often the quietest and best value.</p>
+            </div>
+          </details>
+          <details>
+            <summary>What time can we arrive and leave?</summary>
+            <div>
+              <p>Check-in is from 4pm and check-out is by 10am, which gives us time to make the cottage lovely between guests. If the cottage is free either side of your stay we will always try to be flexible, just ask.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Can we bring our dog?</summary>
+            <div>
+              <p>Please do. Up to two well behaved dogs are welcome, and there is no charge for the first. Add your dogs when booking so we can put the dog towels and spare basket out.</p>
+            </div>
+          </details>
+          <details>
+            <summary>What if we need to cancel?</summary>
+            <div>
+              <p>Our cancellation terms are shown clearly before you confirm your booking. If your plans change, tell us as soon as you can and we will do our best to help, including moving dates where possible.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Is there anything we need to bring?</summary>
+            <div>
+              <p>Just yourselves, food and wellies. Bedding, towels, logs to start you off, Wi-Fi and a welcome tray are all included.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELEMENTOR: full-width CTA band -->
+    <section class="section section--sage cta-band" aria-label="Talk to us">
+      <div class="container reveal">
+        <span class="hand">rather talk it through?</span>
+        <h2>We're happy to help</h2>
+        <p>If you have a question the calendar can't answer, send us a message and we will come straight back to you.</p>
+        <a class="btn btn--paper" href="contact.html">Get in touch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ELEMENTOR: footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h2>Littlegill</h2>
+          <p>A small stone cottage for four by its own little gill. Dog friendly, wood burner, big skies.</p>
+        </div>
+        <div>
+          <h3>Find your way</h3>
+          <ul>
+            <li><a href="cottage.html">The Cottage</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="location.html">Location &amp; Things to Do</a></li>
+            <li><a href="booking.html">Availability &amp; Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Say hello</h3>
+          <ul>
+            <li><a href="mailto:stay@littlegill.co.uk">stay@littlegill.co.uk</a></li>
+            <li><a href="contact.html">Send us a message</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__small">
+        <span>&copy; 2026 Littlegill. All rights reserved.</span>
+        <span>littlegill.co.uk</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Always-visible booking CTA on small screens -->
+  <div class="mobile-cta" id="mobile-cta">
+    <a class="btn btn--primary" href="#book">Check availability</a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
+</body>
+</html>

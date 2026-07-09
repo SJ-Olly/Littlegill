@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Littlegill</title>
+  <meta name="description" content="Photographs of Littlegill holiday cottage, its garden, the gill and the valley around it. Have a proper look before you book.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ELEMENTOR: sticky header, transparent over hero, solid on scroll -->
+  <header class="header" id="header">
+    <div class="container">
+      <a class="header__logo" href="index.html">Littlegill</a>
+
+      <button class="header__toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <svg class="icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+
+      <nav class="header__nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cottage.html">The Cottage</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="location.html">Location</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn header__cta" href="booking.html">Check availability</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ELEMENTOR: short full-width image header -->
+    <section class="page-hero" aria-label="Gallery">
+      <img class="page-hero__image" src="images/valley.svg" alt="The valley around Littlegill in soft light" fetchpriority="high">
+      <div class="container">
+        <span class="label">Gallery</span>
+        <h1>Have a proper look around</h1>
+        <p class="page-hero__sub">The cottage, the garden, the gill and the tops. Tap any photo to see it large.</p>
+      </div>
+    </section>
+
+    <!-- ELEMENTOR: gallery widget, masonry layout with lightbox -->
+    <section class="section" aria-label="Photo gallery">
+      <div class="container">
+        <div class="masonry reveal">
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="0">
+              <img src="images/hero.svg" alt="Littlegill cottage at dusk, lit windows glowing beneath the fells" loading="lazy" width="1920" height="1280">
+            </button>
+            <figcaption>Dusk settling over the cottage</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="1">
+              <img src="images/sitting-room.svg" alt="The sitting room with the wood burner lit" loading="lazy" width="1200" height="900">
+            </button>
+            <figcaption>The sitting room, fire on</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="2">
+              <img src="images/bedroom.svg" alt="The main bedroom in soft morning light" loading="lazy" width="1200" height="1500">
+            </button>
+            <figcaption>Morning light in the main bedroom</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="3">
+              <img src="images/kitchen.svg" alt="The kitchen in warm afternoon light" loading="lazy" width="1200" height="900">
+            </button>
+            <figcaption>The kitchen, warm by four o'clock</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="4">
+              <img src="images/gill.svg" alt="The little gill running past the cottage garden" loading="lazy" width="1200" height="900">
+            </button>
+            <figcaption>The gill itself, ten steps from the door</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="5">
+              <img src="images/cottage-exterior.svg" alt="Littlegill cottage from the lane" loading="lazy" width="1200" height="900">
+            </button>
+            <figcaption>The cottage from the lane</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="6">
+              <img src="images/bedroom-two.svg" alt="The second bedroom with twin beds" loading="lazy" width="1200" height="900">
+            </button>
+            <figcaption>The second bedroom, twins or a super king</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="7">
+              <img src="images/garden.svg" alt="The enclosed garden looking towards the fells" loading="lazy" width="1200" height="900">
+            </button>
+            <figcaption>The garden, breakfast spot when it's fine</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="8">
+              <img src="images/bathroom.svg" alt="The bathroom, bright and calm" loading="lazy" width="1200" height="900">
+            </button>
+            <figcaption>The bathroom</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="9">
+              <img src="images/valley.svg" alt="Looking down the valley from the fell above" loading="lazy" width="1600" height="1000">
+            </button>
+            <figcaption>The view from the fell above</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="10">
+              <img src="images/moor.svg" alt="Heather in bloom on the moor" loading="lazy" width="1200" height="900">
+            </button>
+            <figcaption>Heather on the tops in late summer</figcaption>
+          </figure>
+          <figure>
+            <button class="masonry__item" type="button" data-lightbox="11">
+              <img src="images/village.svg" alt="The village pub glowing at dusk" loading="lazy" width="1200" height="900">
+            </button>
+            <figcaption>The pub, a gentle stroll away</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELEMENTOR: full-width CTA band -->
+    <section class="section section--sage cta-band" aria-label="Book your stay">
+      <div class="container reveal">
+        <span class="hand">picture yourself here</span>
+        <h2>The real thing is even better</h2>
+        <p>Photographs only get you so far. Come and hear the gill for yourself.</p>
+        <a class="btn btn--paper" href="booking.html">Check availability</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ELEMENTOR: footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h2>Littlegill</h2>
+          <p>A small stone cottage for four by its own little gill. Dog friendly, wood burner, big skies.</p>
+        </div>
+        <div>
+          <h3>Find your way</h3>
+          <ul>
+            <li><a href="cottage.html">The Cottage</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="location.html">Location &amp; Things to Do</a></li>
+            <li><a href="booking.html">Availability &amp; Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Say hello</h3>
+          <ul>
+            <li><a href="mailto:stay@littlegill.co.uk">stay@littlegill.co.uk</a></li>
+            <li><a href="contact.html">Send us a message</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__small">
+        <span>&copy; 2026 Littlegill. All rights reserved.</span>
+        <span>littlegill.co.uk</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Always-visible booking CTA on small screens -->
+  <div class="mobile-cta" id="mobile-cta">
+    <a class="btn btn--primary" href="booking.html">Check availability</a>
+  </div>
+
+  <!-- Basic lightbox (Elementor: built-in image lightbox) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox__close" type="button" aria-label="Close image viewer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+    <button class="lightbox__prev" type="button" aria-label="Previous image">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <figure>
+      <img src="" alt="" id="lightbox-image">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox__next" type="button" aria-label="Next image">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
